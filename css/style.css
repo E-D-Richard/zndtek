@@ -1,0 +1,597 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  color: #4a4a4a;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+/* .image-container img {
+  display: block;
+} */
+
+/* ------------------------------------------Header---------- */
+
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+
+header .content-container {
+  background-color: #EDBD68;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-right: -5%;
+}
+
+header .logo img {
+  height: 5rem;
+  width: auto;
+}
+
+header nav {
+  display: flex;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav li {
+  padding: 0.8rem 0.5rem 0.5rem 0.5rem;
+  margin: 1rem 1rem;
+}
+
+nav #more-info {
+  display: none;
+}
+
+nav a {
+  color: #323E63;
+  font-weight: 700;
+}
+
+header .phone-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4E5F96;
+  max-width: 12rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-right: 1.2%;
+  font-weight: 600;
+  padding: 0.6rem 0.8rem;
+}
+
+header .phone-button a {
+  color: white;
+  
+}
+
+header .phone-button i {
+  margin-right: 0.4rem;
+}
+
+.main-content {
+  margin-top: 5.2rem;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+  header .logo img {
+    height: 4rem;
+    width: auto;
+  }
+  header .phone-button {
+    margin-right: 0.9%;
+  }
+  nav li {
+    padding: 0 0 0 0;
+  }
+  header .phone-button i {
+    margin-right: 0.2rem;
+  }
+  .main-content {
+    margin-top: 4.2rem;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  header .logo img {
+    width: auto;
+  }
+  nav a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: underline;
+    
+  }
+  ul #directions, ul #services, ul #contact{
+    display: none;
+  }
+  nav #more-info {
+    display: inline-block;
+  }
+  .main-content {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  header .logo img {
+    height: 3.4rem;
+    width: auto;
+  }
+  nav #more-info {
+    display: none;
+  }
+  .main-content {
+    margin-top: 3.4rem;
+  }
+  header .phone-button {
+    margin: 0.6rem;
+    font-weight: 600;
+    padding: 0.4rem 0.5rem;
+  }
+  .phone-button a {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* ------------------------- Landing Banner ------- */
+
+
+.mission .image-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40rem;
+  background-image: url("../images/soundtek main img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.mission .statement-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 6% 6% 06%;
+  background-color: #586AA8;
+  border-radius: 2%;
+  border: 1px solid #4a4a4a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+
+.mission h1 {
+  max-height: 30rem;
+  margin: 3rem 2rem 3rem 2rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.statement-container a {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap; 
+}
+
+.mission .technician-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  background-color: #FFCB70;
+  border-radius: 24px;
+  border: 4px solid #4a4a4a;
+  margin-bottom: 3%;
+  padding: 1.2rem 0 1rem;
+
+}
+
+.technician-button h4 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #323E63;
+  padding-left: 1.2rem;
+}
+
+.technician-button .whatsapp-button {
+  max-width: 55%;
+  min-height: 3rem;
+  display: flex;
+  justify-content: center;
+  background-color: #008A63;
+  border-radius: 10px;
+  border: .6px solid #4E5F96;
+  padding: 0.3rem 1rem 0.3rem 0.9rem;
+  margin: 0 1.2rem 0;
+}
+.technician-button #wsaap-icon-size {
+  font-size: 3rem;
+  margin-left: .6rem;
+  padding-top: .3rem;
+  color: white;
+}
+.whatsapp-button p {
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: white;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .mission h1 {
+    margin: 4% 6%;
+    font-size: 4rem;
+  }
+  .mission .technician-button {
+    max-width: 60%;
+    margin-bottom: 4%;
+  }
+  .technician-button h4 {
+    padding-left: 0rem;
+    font-size: 3rem;
+  }
+  .mission .whatsapp-button {
+    margin-top: 0.8rem;
+  }
+  .whatsapp-button p {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .mission h1 {
+    font-size: 3.2rem;
+    margin: 6% 7% 5%;
+  }
+  .mission .technician-button {
+    max-width: 50%;
+    margin-bottom: 5%;
+  }
+  .technician-button h4 {
+    font-size: 2.4rem;
+  }
+  .mission .whatsapp-button {
+    min-height: 2rem;
+    max-width: 60%;
+    /* margin-top: 0.8rem; */
+  }
+  .whatsapp-button p {
+    font-size: 1.8rem;
+  }
+  .technician-button #wsaap-icon-size {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .mission .mission-statement {
+    font-size: 2.4rem;
+    margin: 6% 5% 8% 5%;
+  }
+  .mission .technician-button {
+    max-width: 50%;
+    margin-bottom: 5%;
+  }
+  .mission .whatsapp-button {
+    max-width: 78%;
+  }
+  .technician-button h4 {
+    font-size: 2.2rem;
+  }
+  .whatsapp-button p {
+    font-size: 1.4rem;
+  }
+  .technician-button #wsaap-icon-size {
+    font-size: 2rem;
+  }
+}
+
+
+/* -----------------------------------  Services  ---------- */
+
+.container-services h2 {
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #5f74b8;
+  padding-top: 8rem;
+}
+
+.services .circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min-content;
+  margin: 1rem 2.5rem;
+
+}
+
+.services .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5f74b8;
+  min-width: 27rem;
+  min-height: 27rem;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.services .text-box {
+  min-width: 24rem;
+  flex: 1;
+  border-radius: 5%;
+  background-color: #323E63;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 3rem 2rem 5rem 2rem;
+}
+
+.text-box h4 {
+  color: white;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.text-box p {
+  color: white;
+  line-height: 2.2rem;
+}
+
+
+.services #banner1 {
+  background-image: url("../images/fixit-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.services #banner2 {
+  background-image: url("../images/fixit-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.services #banner3 {
+  background-image: url("../images/fixit-3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+  .container-services h2 {
+    font-size: 3.2rem;
+    padding: 1.6rem 0rem 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .container-services h2 {
+    font-size: 2.4rem;
+    padding: 1.4rem 0rem 1.2rem;
+  }
+}
+
+
+
+/* ---------------------------- Info & Directions -------- */
+
+.info-container {
+  display: flex;
+}
+.info-container .info-box1 {
+  flex: 2 1 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding-top: 2rem;
+}
+
+
+.info-container .info-box2 {
+  flex: 1 19;
+  min-height: 100%;
+}
+
+
+.info-box1 h3 {
+  padding: 2rem 0;
+}
+
+.info-box1 #customer-statement {
+  padding: 0 3rem 0 2rem;
+}
+
+.info-box1 .panel-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.panel-2 .column-1, .panel-2 .column-2, .panel-2 .column-3  {
+  margin: 2rem 2.5rem;
+  width: min-content;
+  flex-basis: 1;
+}
+
+.panel-2 h4 {
+  padding: 1rem 0;
+}
+
+
+.panel-2 p {
+  min-width: 15rem;
+}
+
+.panel-2 .column-3 a {
+  color: #4E5F96;
+  text-decoration: underline;
+
+}
+
+/* map */
+
+.info-container .info-box2 {
+  display: flex;
+  align-items: stretch;
+  justify-content: end;
+}
+
+
+
+.info-box2 iframe {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+
+@media only screen and (max-width: 1250px){
+
+  .info-container {
+    flex-direction: column;
+  }
+
+  .info-container .info-box1 {
+    padding-top: 1.5rem;
+  }
+
+  .contact-box #customer-statement {
+    padding: 0;
+  }
+
+  .info-container .info-box2 {
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+    padding-top: 2%;
+  }
+
+  .info-box2 iframe {
+    min-width: 100%;
+    min-height: 20rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px){
+  .info-container .info-box2 {
+    padding-top: 3.5%;
+  }
+}
+
+/* -----------------------------------  Social Media  ----- */
+
+.container-social-media {
+  display: flex;
+  justify-content: center;
+  background-color: #5f74b8;
+}
+
+.container-social-media a {
+font-size: 3rem;
+color: white;
+padding: 2%;
+}
+/* --------------------------------------- footer  ------- */
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #E4B564;
+  width: 100%;
+  height: 3rem;
+  margin-top: auto;
+  z-index: 1;
+}
+footer p {
+  font-size: 1.3rem; 
+  color: #4E5F96;
+  margin-left: .8%;
+}
